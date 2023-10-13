@@ -1,0 +1,248 @@
+:root {
+  --white: #ffffff;
+  --gray50: #f9fafb;
+  --gray200: #e5e7eb;
+  --gray400: #94a3b8;
+  --gray600: #4b5563;
+  --gray700: #374151;
+  --blue500: #3b82f6;
+  --blue600: #0284c7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: var(--white);
+}
+
+/* -- reset -- */
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+button,
+input,
+textarea {
+  border: 0;
+  outline: 0;
+  resize: none;
+}
+
+/* -- layout -- */
+#app {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* -- header -- */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 0;
+}
+
+#header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.5rem;
+  color: var(--gray700);
+}
+
+#header img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+/* -- main -- */
+main #form {
+  margin-top: 96px;
+}
+
+main #form h2 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 1.5rem;
+  letter-spacing: -2%;
+  text-align: center;
+  color: var(--gray700);
+}
+
+main #form form {
+  max-width: 49.125rem;
+  width: 100%;
+  margin: 4rem auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+main #form form .input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+main #form form .input-wrapper label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: var(--gray700);
+}
+
+main #form form .input-wrapper input,
+main #form form .input-wrapper textarea {
+  border: 2px solid var(--gray200);
+  padding: 1.125rem 0.875rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: var(--gray700);
+  transition: border 0.2s;
+}
+
+main #form form .input-wrapper input:focus-within,
+main #form form .input-wrapper textarea:focus-within {
+  border: 2px solid var(--blue500);
+}
+
+main #form form .input-wrapper textarea {
+  height: 8.5rem;
+}
+
+main #form form button {
+  width: 12.5rem;
+  height: 4rem;
+  border-radius: 6px;
+  background-color: var(--blue600);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gray50);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+main #form form button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+main #form form button:hover {
+  background-color: var(--blue500);
+}
+
+main #posts-group {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+main #posts-group .post {
+  display: flex;
+  gap: 1rem;
+  border: 2px solid var(--gray200);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+main #posts-group .post:hover {
+  border: 2px solid var(--blue600);
+  cursor: pointer;
+}
+
+main #posts-group .post img {
+  width: 20rem;
+  height: auto;
+  object-fit: cover;
+}
+
+main #posts-group .post-info {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+  flex: 1;
+}
+
+main #posts-group .post-info h2 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: var(--gray700);
+}
+
+main #posts-group .post-info p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: var(--gray600);
+}
+
+main #posts-group .empty h1 {
+  font-size: 3rem;
+  color: var(--gray600);
+  text-align: center;
+}
+
+/* -- footer -- */
+
+footer {
+  padding: 6rem 0 2rem 0;
+}
+
+footer .footer-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+footer .footer-info h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.5rem;
+  color: var(--gray700);
+}
+
+footer .footer-info strong {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--gray700);
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  color: var(--gray600);
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 80%;
+  }
+
+  main #posts-group .post {
+    flex-direction: column;
+  }
+
+  main #posts-group .post img {
+    width: 100%;
+  }
+
+  main #posts-group .post .post-info {
+    padding-inline: 1rem;
+  }
+}

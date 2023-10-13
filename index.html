@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="./web/css/styles.css">
+</head>
+
+<body>
+  <div id="app">
+
+    <!--header-->
+    <header id="header">
+      <h1>Blog.</h1>
+
+      <img src="https://github.com/jakeliny.png" alt="Foto do usuário">
+    </header>
+
+    <!--main-->
+    <main>
+      <section id="form">
+        <h2>Compartilhe suas ideias</h2>
+        <form id="form">
+
+          <div class="input-wrapper">
+            <label for="title">Título</label>
+            <input type="text" class="title" name="title" placeholder="Digite o Título">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="image">Imagem</label>
+            <input type="url" class="url" name="url" placeholder="Exemplo: https://unsplash.com/pt-br/fotografias">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="message">Mensagem</label>
+            <textarea class="message" name="message" placeholder="Digite seu post"></textarea>
+          </div>
+
+          <button class="button">Comentar</button>
+        </form>
+      </section>
+
+      <section id="posts-group"></section>
+    </main>
+
+    <!--footer-->
+    <footer>
+      <div class="footer-info">
+        <h1>Blog.</h1>
+        <strong>Contato - blog@gmail.com</strong>
+      </div>
+      <p>© 2023 Blog. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <script src="./web/js/main.js"></script>
+</body>
+
+</html>
