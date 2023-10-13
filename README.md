@@ -30,11 +30,11 @@
 
   </p>
 
-<a href="" target="_blank">Clique e veja projeto online</a>
+<a href="https://blog-phi-two-73.vercel.app/" target="_blank">Clique e veja projeto online</a>
 
 ## 📝 Licença
 
-Este projeto está licenciado com a licença [MIT](https://github.com/brunogoncalvesferreira/treine.me/blob/main/LICENSE).
+Este projeto está licenciado com a licença [MIT](https://github.com/brunogoncalvesferreira/blog/blob/main/LICENSE).
 
   <h2>🙋🏻‍♂️ Entre em contato<h2>
   <div style="display: flex;">
