@@ -58,7 +58,7 @@ textarea {
   font-size: 2rem;
   font-weight: 800;
   line-height: 1.5rem;
-  color: var(--gray700);
+  color: var(--gray400);
 }
 
 #header img {
@@ -77,7 +77,7 @@ main #form h2 {
   font-weight: 900;
   line-height: 1.5rem;
   letter-spacing: -2%;
-  color: var(--gray700);
+  color: var(--gray400);
 }
 
 main #form form {
@@ -170,7 +170,6 @@ main #posts-group .post:hover {
 
 main #posts-group .post img {
   width: 20rem;
-  height: auto;
   object-fit: cover;
 }
 
@@ -222,22 +221,14 @@ footer .footer-info h1 {
   font-size: 2rem;
   font-weight: 800;
   line-height: 1.5rem;
-  color: var(--gray700);
+  color: var(--gray400);
 }
 
 footer .footer-info strong {
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 24px;
-  color: var(--gray700);
-}
-
-footer p {
-  text-align: center;
-  font-size: 0.875rem;
-  font-weight: 700;
-  line-height: 1.5rem;
-  color: var(--gray600);
+  color: var(--gray400);
 }
 
 @media (max-width: 600px) {
