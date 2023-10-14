@@ -1,6 +1,7 @@
 const titleText = document.querySelector(".title")
 const urlText = document.querySelector(".url")
 const messageText = document.querySelector(".message")
+
 const button = document.querySelector("button")
 const postsElement = document.getElementById("posts-group")
 
@@ -43,6 +44,7 @@ button.addEventListener("click", (event) => {
   titleText.value = ""
   urlText.value = ""
   messageText.value = ""
+
   titleText.focus()
 })
 

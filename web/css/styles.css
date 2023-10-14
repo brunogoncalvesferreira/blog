@@ -18,6 +18,7 @@
 
 body {
   background: var(--white);
+  height: 100vh;
 }
 
 /* -- reset -- */
@@ -48,6 +49,9 @@ textarea {
   align-items: center;
   justify-content: space-between;
   padding: 2.5rem 0;
+
+  max-width: 49.125rem;
+  margin: 0 auto;
 }
 
 #header h1 {
@@ -64,7 +68,8 @@ textarea {
 }
 /* -- main -- */
 main #form {
-  margin-top: 96px;
+  max-width: 49.125rem;
+  margin: 6rem auto 0 auto;
 }
 
 main #form h2 {
@@ -72,7 +77,6 @@ main #form h2 {
   font-weight: 900;
   line-height: 1.5rem;
   letter-spacing: -2%;
-  text-align: center;
   color: var(--gray700);
 }
 
@@ -140,10 +144,14 @@ main #form form button:hover {
 }
 
 main #posts-group {
-  margin-top: 6rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  padding-bottom: 6rem;
+
+  max-width: 49.125rem;
+  margin: 4rem auto 0 auto;
 }
 
 main #posts-group .post {
@@ -197,7 +205,10 @@ main #posts-group .empty h1 {
 /* -- footer -- */
 
 footer {
-  padding: 6rem 0 2rem 0;
+  max-width: 49.125rem;
+  margin: 0 auto;
+
+  height: 3rem;
 }
 
 footer .footer-info {
